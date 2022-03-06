@@ -1,0 +1,7 @@
+A = int(input('Enter Side A: '))
+B = int(input('Enter Side B: '))
+C = int(input('Enter Side C: '))
+if A == B == C :
+    print("RIGHT")
+else:
+    print("NOT RIGHT")
