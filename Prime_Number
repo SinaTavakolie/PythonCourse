@@ -1,0 +1,14 @@
+max_value = int(input("Display Primes up to what value? "))
+value = 2
+while value <= max_value:
+    is_prime = True
+    factor = 2
+    while factor < value:
+        if value % factor ==0:
+            is_prime = False
+            break
+        factor += 1
+    if is_prime:
+        print(value, end= ' ')
+    value += 1
+print()
