@@ -1,0 +1,21 @@
+print('The GCD Of 2 Numbers | Sina Tavakoli \n')
+
+while True:
+    a = int(input('a = '))
+    b = int(input('b = '))
+
+    if (a < 1 or b < 1):
+        print('Enter Number Higher Than 1 !')
+        break
+
+    if (a < b):
+        a1 = a
+        a = b
+        b = a1
+
+    while (b != 0):
+        a2 = a % b
+        a = b
+        b = a2
+
+    print('GCD of a & b = ', a, '\n')
