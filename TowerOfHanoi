@@ -1,0 +1,12 @@
+def TowerOfHanoi(n , Soton_MAB, Soton_MI, Soton_MAG): 
+    # MAB :Mabda , MI :Miani , MAG :Maghsad
+    if n == 1:
+        print("Halghe 1 Ra Enteghal Dahid Az",Soton_MAB,"Be Soton",Soton_MI)
+        return
+    TowerOfHanoi(n-1, Soton_MAB, Soton_MAG, Soton_MI)
+    print("Enteghal Dahid Halgheye",n,"Ra Az Soton",Soton_MAB,"Be Soton",Soton_MI)
+    TowerOfHanoi(n-1, Soton_MAG, Soton_MI, Soton_MAB)
+
+n = 5
+TowerOfHanoi(n, 'A', 'C', 'B')
+# A, C, B Esm Soton Ha .
